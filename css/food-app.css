@@ -1,20 +1,16 @@
-#container {
-    padding: 2%;
+#bgphoto {
+    width: 100%;
+    height: 100%;
+    margin-top: 2%;
 }
-
-
 
 #welcome {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 3%;
+    padding-top: 2%;
 }
 
-#selectPrompt {
-    margin-top: 4%;
-}
-
-button {
-    margin: 1%;
+#quote {
+    margin-top: 2%;
 }
