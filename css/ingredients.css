@@ -1,0 +1,46 @@
+/* Entire page styling */
+.pagecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ------------------------------------------------------- */
+/* Big box styling */
+.macrobox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black; /* temporary while styling to clearly see box */
+    width: 50%; /* temporary while styling to clearly see box */
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+/* ------------------------------------------------------- */
+/* Top box under navbar */
+#mealbox {
+    width: 75%;
+    height: 20%;
+}
+
+/* Inside mealbox */
+#mealselect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black; /* temporary while styling to clearly see box */
+    width: 50%; /* temporary while styling to clearly see box */
+}
+
+#threebuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 3px solid black; /* temporary while styling to clearly see box */
+    width: 75%; /* temporary while styling to clearly see box */
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#lunchbutton {
+    margin-inline: 15%;
+}

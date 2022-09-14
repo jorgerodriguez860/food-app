@@ -8,130 +8,132 @@
     <title>Ingredients</title>
 </head>
 <body>
-    <div id="navbar">Navigation bar</div>
+    <div class="pagecontainer">
+        <div id="navbar">Navigation bar</div>
 
-    <div id="mealbox">
-        <div id="mealselect">
-            What's for...?<br>
-            Select an option below:
+        <div class="macrobox" id="mealbox">
+            <div id="mealselect">
+                <h2>What's for...?</h2>
+                <h3>Select an option below:</h3>
+            </div>
+
+            <div id="threebuttons">
+                <button class="mealbuttons" id="breakfastbutton">Breakfast</button>
+                <button class="mealbuttons" id="lunchbutton">Lunch</button>
+                <button class="mealbuttons" id="dinnerbutton">Dinner</button>
+            </div>
         </div>
 
-        <div id="mealbuttons">
-            <button id="breakfastbutton">Breakfast</button>
-            <button id="lunchbutton">Lunch</button>
-            <button id="dinnerbutton">Dinner</button>
+        <div class="macrobox" id="ingredientsbox">
+            <div id="ingredientsinstructions">
+                Type an ingredient that you have below and press Enter to populate your pantry.
+            </div>
+
+            <input id="ingredientsinput" type="text" name="ingredient" placeholder="ingredient"/>
         </div>
+
+        <div class="macrobox" id="pantrybox">
+            <div id="pantrytitle">Pantry</div>
+
+            <div id="pantry">
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+                <ul>ingredient</ul>
+            </div>
+
+            <button id="pantrybutton">What can I make?</button>
+        </div>
+
+        <div class="macrobox" id="suggestionsbox">
+            <div class="dishbox" id="dishbox1">
+                <div class="dishtitle" id="dish1title">Dish 1</div>
+                <img class="dishimage" id="dish1image" src="" alt="Dish 1" />
+                <p class="dishmissingstuff" id="dish1missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish1missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish1cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox2">
+                <div class="dishtitle" id="dish2title">Dish 2</div>
+                <img class="dishimage" id="dish2image" src="" alt="Dish 2" />
+                <p class="dishmissingstuff" id="dish2missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish2missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish2cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox3">
+                <div class="dishtitle" id="dish3title">Dish 3</div>
+                <img class="dishimage" id="dish3image" src="" alt="Dish 3" />
+                <p class="dishmissingstuff" id="dish3missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish3missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish3cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox4">
+                <div class="dishtitle" id="dish4title">Dish 4</div>
+                <img class="dishimage" id="dish4image" src="" alt="Dish 4" />
+                <p class="dishmissingstuff" id="dish4missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish4missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish4cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox5">
+                <div class="dishtitle" id="dish5title">Dish 5</div>
+                <img class="dishimage" id="dish5image" src="" alt="Dish 5" />
+                <p class="dishmissingstuff" id="dish5missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish5missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish5cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox6">
+                <div class="dishtitle" id="dish6title">Dish 6</div>
+                <img class="dishimage" id="dish6image" src="" alt="Dish 6" />
+                <p class="dishmissingstuff" id="dish6missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish6missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish6cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox7">
+                <div class="dishtitle" id="dish7title">Dish 7</div>
+                <img class="dishimage" id="dish7image" src="" alt="Dish 7" />
+                <p class="dishmissingstuff" id="dish7missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish7missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish7cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox8">
+                <div class="dishtitle" id="dish8title">Dish 8</div>
+                <img class="dishimage" id="dish8image" src="" alt="Dish 8" />
+                <p class="dishmissingstuff" id="dish8missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish8missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish8cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox9">
+                <div class="dishtitle" id="dish9title">Dish 9</div>
+                <img class="dishimage" id="dish9image" src="" alt="Dish 9" />
+                <p class="dishmissingstuff" id="dish9missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish9missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish9cooktime">Time to cook: </p>
+            </div>
+
+            <div class="dishbox" id="dishbox10">
+                <div class="dishtitle" id="dish10title">Dish 10</div>
+                <img class="dishimage" id="dish10image" src="" alt="Dish 10" />
+                <p class="dishmissingstuff" id="dish10missingstuff">Missing ingredients: </p>
+                <p class="dishmissingprice" id="dish10missingprice">Total price range of missing ingredients: </p>
+                <p class="dishcooktime" id="dish10cooktime">Time to cook: </p>
+            </div>
+        </div>
+
+        <div id="creators">Creators: An, Carlos, Jorge</div>
     </div>
-
-    <div id="ingredientsbox">
-        <div id="ingredientsinstructions">
-            Type an ingredient that you have below and press Enter to populate your pantry.
-        </div>
-
-        <input id="ingredientsinput" type="text" name="ingredient" placeholder="ingredient"/>
-    </div>
-
-    <div id="pantrybox">
-        <div id="pantrytitle">Pantry</div>
-
-        <div id="pantry">
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-            <ul>ingredient</ul>
-        </div>
-
-        <button id="pantrybutton">What can I make?</button>
-    </div>
-
-    <div id="suggestionsbox">
-        <div class="dishbox" id="dishbox1">
-            <div class="dishtitle" id="dish1title">Dish 1</div>
-            <img class="dishimage" id="dish1image" src="" alt="Dish 1" />
-            <p class="dishmissingstuff" id="dish1missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish1missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish1cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox2">
-            <div class="dishtitle" id="dish2title">Dish 2</div>
-            <img class="dishimage" id="dish2image" src="" alt="Dish 2" />
-            <p class="dishmissingstuff" id="dish2missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish2missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish2cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox3">
-            <div class="dishtitle" id="dish3title">Dish 3</div>
-            <img class="dishimage" id="dish3image" src="" alt="Dish 3" />
-            <p class="dishmissingstuff" id="dish3missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish3missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish3cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox4">
-            <div class="dishtitle" id="dish4title">Dish 4</div>
-            <img class="dishimage" id="dish4image" src="" alt="Dish 4" />
-            <p class="dishmissingstuff" id="dish4missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish4missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish4cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox5">
-            <div class="dishtitle" id="dish5title">Dish 5</div>
-            <img class="dishimage" id="dish5image" src="" alt="Dish 5" />
-            <p class="dishmissingstuff" id="dish5missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish5missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish5cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox6">
-            <div class="dishtitle" id="dish6title">Dish 6</div>
-            <img class="dishimage" id="dish6image" src="" alt="Dish 6" />
-            <p class="dishmissingstuff" id="dish6missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish6missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish6cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox7">
-            <div class="dishtitle" id="dish7title">Dish 7</div>
-            <img class="dishimage" id="dish7image" src="" alt="Dish 7" />
-            <p class="dishmissingstuff" id="dish7missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish7missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish7cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox8">
-            <div class="dishtitle" id="dish8title">Dish 8</div>
-            <img class="dishimage" id="dish8image" src="" alt="Dish 8" />
-            <p class="dishmissingstuff" id="dish8missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish8missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish8cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox9">
-            <div class="dishtitle" id="dish9title">Dish 9</div>
-            <img class="dishimage" id="dish9image" src="" alt="Dish 9" />
-            <p class="dishmissingstuff" id="dish9missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish9missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish9cooktime">Time to cook: </p>
-        </div>
-
-        <div class="dishbox" id="dishbox10">
-            <div class="dishtitle" id="dish10title">Dish 10</div>
-            <img class="dishimage" id="dish10image" src="" alt="Dish 10" />
-            <p class="dishmissingstuff" id="dish10missingstuff">Missing ingredients: </p>
-            <p class="dishmissingprice" id="dish10missingprice">Total price range of missing ingredients: </p>
-            <p class="dishcooktime" id="dish10cooktime">Time to cook: </p>
-        </div>
-    </div>
-
-    <div id="creators">Creators: An, Carlos, Jorge</div>
 </body>
 </html>
