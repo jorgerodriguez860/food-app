@@ -1,19 +1,23 @@
-#container {
-    padding: 2%;
+body {
+    background-image: url(../assets/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
 }
-
-
+#container {
+    padding: 2%;    
+}
 
 #welcome {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 3%;
-  
+    padding-top: 6%;
 }
 
-#selectPrompt {
+#quote {
     margin-top: 4%;
+    
 }
 
 button {
