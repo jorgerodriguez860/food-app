@@ -8,7 +8,7 @@ var settings = {
   "method": "POST",
   "headers": {
     "Content-Type": "application/x-www-form-urlencoded",
-    "Authorization": "Basic Zm9vZGFwcGRpZ2l0YWxjcmFmdHMtMzc3MDhhM2IxMTllMDZjNzZkMGMyZWMyNjFhZGFkYTc0NjY0MTYzMTQ2NzQ4NTk0NDY5OjQ2MVF5OEhUdjl0WWdyS3Jwc2o4bVpHaS1HbUhQQ3NtWEVjeDJpQkg="
+    "Authorization": "Basic "
   },
   "data": {
     "grant_type": "client_credentials",
