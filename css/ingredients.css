@@ -1,3 +1,6 @@
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
 /* Entire page styling */
 .pagecontainer {
     display: flex;
@@ -10,7 +13,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid black; /* temporary while styling to clearly see box */
+    
+    /*temporary while styling to clearly see box*/
     width: 50%; /* temporary while styling to clearly see box */
     margin-top: 1%;
     margin-bottom: 1%;
@@ -18,8 +22,9 @@
 /* ------------------------------------------------------- */
 /* Top box under navbar */
 #mealbox {
-    width: 75%;
+    width: 90%;
     height: 20%;
+    /* border: 2px solid black; */
 }
 
 /* Inside mealbox */
@@ -27,20 +32,56 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid black; /* temporary while styling to clearly see box */
-    width: 50%; /* temporary while styling to clearly see box */
+    /* border: 3px solid black; */
+     /*temporary while styling to clearly see box*/
+    width: 60%; /* temporary while styling to clearly see box */
+    background-color: #dc3444;
+    border-radius: 7px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#whitetext {
+    color: white;
 }
 
 #threebuttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    border: 3px solid black; /* temporary while styling to clearly see box */
-    width: 75%; /* temporary while styling to clearly see box */
+    /* border: 3px solid black; temporary while styling to clearly see box */
+    width: 80%; /* temporary while styling to clearly see box */
     padding-top: 3%;
     padding-bottom: 3%;
 }
 
 #lunchbutton {
     margin-inline: 15%;
+}
+
+#ingredientsPic {
+    height: 60%;
+    width: 80%;
+}
+
+#pantry {
+    width: 50%;
+    
+}
+
+#ingredientsinput {
+    width: 70%;
+}
+
+#ingredientsinputbox {
+    width: 70%;
+}
+
+#pantrybutton {
+    margin-top: 10px;
+}
+
+#ingredientsbox {
+    /* border: 3px solid black;  */
+    width: 70%;
 }
