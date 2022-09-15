@@ -12,7 +12,53 @@
     align-items: center;
 }
 
-#selection {
-    margin-top: 2%;
-    width: 50%;
+#mealbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mealselect {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #dc3444;
+    color: white;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+#mealtype {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    margin: 1%;
+    margin-bottom: 1%;
+}
+
+hr {
+    background-color: #dc3444;
+    color: #dc3444;
+    width: 95%;
+
+}
+
+#cuisine {
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+button {
+    margin: 0.5%;
+    align-items: center;
+}
+
+#submit {
+    margin-top: 5%;
+}
+
+#submitButton {
+    background-color: #dc3444;
+    color: white;
 }
