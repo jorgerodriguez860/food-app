@@ -42,9 +42,9 @@
             </div>
 
             <div id="threebuttons">
-                <button class="mealbuttons btn btn-outline-danger btn-lg" id="breakfastbutton" onclick="mealTypeClick('breakfast')" aria-pressed="true">Breakfast &#127859;</button>
+                <!-- <button class="mealbuttons btn btn-outline-danger btn-lg" id="breakfastbutton" onclick="mealTypeClick('breakfast')" aria-pressed="true">Breakfast &#127859;</button>
                 <button class="mealbuttons btn btn-outline-danger btn-lg" id="lunchbutton" onclick="mealTypeClick('lunch')">Lunch &#127858</button>
-                <button class="mealbuttons btn btn-outline-danger btn-lg" id="dinnerbutton" onclick="mealTypeClick('dinner')">Dinner 	&#127869;</button>
+                <button class="mealbuttons btn btn-outline-danger btn-lg" id="dinnerbutton" onclick="mealTypeClick('dinner')">Dinner 	&#127869;</button> -->
             </div>
         </div>
 
@@ -94,8 +94,15 @@
               </ul>
 
             <!-- <button id="pantrybutton">What can I make?</button> -->
-            <button class="mealbuttons btn btn-danger btn-lg" id="pantrybutton">What can I make?</button>
+            <button class="mealbuttons btn btn-danger btn-lg" id="pantrybutton" onclick="searchWhatCanBeMade()">What can I make?</button>
         </div>
+
+        <div id="suggestionsbox">
+    
+        </div>
+
+
+
 
         <!-- <div class="macrobox" id="suggestionsbox">
             <div class="dishbox" id="dishbox1">
