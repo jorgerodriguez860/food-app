@@ -10,7 +10,8 @@
     <title>Cook by Recipes</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+
+    <nav class="navbar navbar-expand-lg bg-light">    <!-- beginning navbar -->
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html"><img src="../assets/navIcon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
             Food App</a>
@@ -24,21 +25,20 @@
             </ul>
           </div>
         </div>
-    </nav>      <!-- end of navbar -->
+    </nav>    <!-- end of navbar -->
 
-<div id="container">        <!-- main container -->
+<div id="container">        <!-- container -->
 
   <div id="main">         <!-- main div to hold content -->
 
     <div class="macrobox" id="mealbox">
 
-      <div id="mealselect">
+      <div id="mealselect">   <!-- page header and prompt -->  
         <h2 id="header">Cooking with Recipes</h2>
         <h5>Please select options below:</h5>
-        <!-- <h3 id="whitetext">Select an option below:</h3> -->
       </div>
 
-      <div id="mealtype">
+      <div id="mealtype">   <!-- options of meal type -->
         <button class="mealbuttons btn btn-outline-danger btn-lg" id="breakfastbutton" onclick="mealTypeClick('breakfast')" aria-pressed="true">Breakfast &#127859</button>
         <button class="mealbuttons btn btn-outline-danger btn-lg" id="lunchbutton" onclick="mealTypeClick('lunch')">Lunch &#127858</button>
         <button class="mealbuttons btn btn-outline-danger btn-lg" id="dinnerbutton" onclick="mealTypeClick('dinner')">Dinner 	&#127869</button>
@@ -46,37 +46,43 @@
 
       <hr>
 
-      <div id="cuisine">
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('asian')" aria-pressed="true">Asian</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('american')">American</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('central europe')">Central Europe</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('caribbean')" aria-pressed="true">Caribbean</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('chinese')">Chinese</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('french')" aria-pressed="true">French</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('indian')">Indian</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('japanese')" aria-pressed="true">Japanese</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('southeast asian')">South East Asian</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('italian')">Italian</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('latin')" aria-pressed="true">Latin American</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('mediterranean')">Mediterranean</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('mexican')">Mexican</button>
-        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="cuisineTypeClick('middle eastern')" aria-pressed="true">Middle Eastern</button>
-        
+      <div id="cuisine">    <!-- options of cuisine type -->
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="asian" onclick="cuisineTypeClick('asian')" aria-pressed="true">Asian</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="american" onclick="cuisineTypeClick('american')">American</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="centraleurope" onclick="cuisineTypeClick('central europe')">Central Europe</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="caribbean" onclick="cuisineTypeClick('caribbean')" aria-pressed="true">Caribbean</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="chinese" onclick="cuisineTypeClick('chinese')">Chinese</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="french" onclick="cuisineTypeClick('french')" aria-pressed="true">French</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="indian" onclick="cuisineTypeClick('indian')">Indian</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="japanese" onclick="cuisineTypeClick('japanese')" aria-pressed="true">Japanese</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="southeastasian" onclick="cuisineTypeClick('southeast asian')">South East Asian</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="italian" onclick="cuisineTypeClick('italian')">Italian</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="latin" onclick="cuisineTypeClick('latin')" aria-pressed="true">Latin American</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="mediterranean" onclick="cuisineTypeClick('mediterranean')">Mediterranean</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="mexican" onclick="cuisineTypeClick('mexican')">Mexican</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="middleeastern" onclick="cuisineTypeClick('middle eastern')" aria-pressed="true">Middle Eastern</button>
       </div>
 
-      <div id="submit">
-        <button class="mealbuttons btn btn-outline-danger btn-lg" id="submitButton" onclick="()">Cook</button>
+      <div id="queryInput">   <!-- input box -->
+        <input id="query" name="ingredient" type="text" class="form-control" placeholder="Enter main ingredient" aria-label="Recipient's username" aria-describedby="basic-addon2">     
       </div>
+
+      <div id="submit">   <!-- submit button box -->
+        <button class="mealbuttons btn btn-outline-danger btn-lg" id="submitButton" onclick="cook()">Cook</button>
+      </div>
+
+      <div>
+        <div id="suggestionsbox"></div>   <!-- inner html div to append created meal cards -->
+      </div>
+
     </div>
 
   </div>
       
-
-      
-
 </div>
     
 </body>
+<script src="../javascript/recipes.js"></script>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </html>
