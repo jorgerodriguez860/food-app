@@ -4,54 +4,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/ingredients.css">
     <title>Ingredients</title>
 </head>
 <body>
-    <div class="pagecontainer">
-        <div id="navbar">Navigation bar</div>
+    
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"><img src="../assets/navIcon.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            Food App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="./ingredients.html">Cook with Ingredients</a></li>
+              <li class="nav-item"><a class="nav-link" href="./recipes.html">Cook by Recipes</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>      <!-- end of navbar -->
 
+    <div class="pagecontainer">
+        
+        <div class="card bg-light mb-3" id="mealbox" style="max-width: 18rem;">
+          </div>
         <div class="macrobox" id="mealbox">
+            <!-- <img src="../assets/AdobeStock_208536868_Preview.jpeg" id="ingredientsPic" alt=""> -->
             <div id="mealselect">
-                <h2>What's for...?</h2>
-                <h3>Select an option below:</h3>
+                
+                <h2 id="whitetext">What's for...?</h2>
+                <h3 id="whitetext">Select an option below:</h3>
             </div>
 
             <div id="threebuttons">
-                <button class="mealbuttons" id="breakfastbutton">Breakfast</button>
-                <button class="mealbuttons" id="lunchbutton">Lunch</button>
-                <button class="mealbuttons" id="dinnerbutton">Dinner</button>
+                <button class="mealbuttons btn btn-outline-danger btn-lg" id="breakfastbutton" onclick="mealTypeClick('breakfast')" aria-pressed="true">Breakfast &#127859;</button>
+                <button class="mealbuttons btn btn-outline-danger btn-lg" id="lunchbutton" onclick="mealTypeClick('lunch')">Lunch &#127858</button>
+                <button class="mealbuttons btn btn-outline-danger btn-lg" id="dinnerbutton" onclick="mealTypeClick('dinner')">Dinner 	&#127869;</button>
             </div>
         </div>
 
         <div class="macrobox" id="ingredientsbox">
             <div id="ingredientsinstructions">
-                Type an ingredient that you have below and press Enter to populate your pantry.
+                <h6>Type an ingredient that you have below and press Enter to populate your pantry.</h3>   
             </div>
 
-            <input id="ingredientsinput" type="text" name="ingredient" placeholder="ingredient"/>
+            <!-- <input id="ingredientsinput" type="text" name="ingredient" placeholder="ingredient"/> -->
+            <div class="input-group mb-3" id="ingredientsinputbox" >
+                <input id="ingredientsinput" name="ingredient" type="text" class="form-control" placeholder="ingredient" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-danger" type="button" onclick="ingredientEnterClick()">Enter</button>
+                </div>
+              </div>
+
+              <!-- <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown button
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div> -->
+
+              <!-- <select name="dropdown" id="ingredientdropdown">
+                <option value="flour">Flour</option>
+                <option value="chicken">Chicken</option>
+                <option value="eggs">Eggs</option>
+                <option value="meat"></option>Meat</option>
+                <option value="meat"></option>Meat</option>
+              </select>
+              <button class="btn btn-outline-danger" type="button">Enter</button> -->
         </div>
 
         <div class="macrobox" id="pantrybox">
-            <div id="pantrytitle">Pantry</div>
+            <div id="pantrytitle"><h6>Current Pantry</h6></div>
 
-            <div id="pantry">
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-                <ul>ingredient</ul>
-            </div>
+            <ul class="list-group" id="pantry">
+                <li class="list-group-item" id="ingredient0" onclick="deleteIngredient(0)">&#127869;</li>
+                <li class="list-group-item" id="ingredient1" onclick="deleteIngredient(1)">&#127869;</li>
+                <li class="list-group-item" id="ingredient2" onclick="deleteIngredient(2)">&#127869; </li>
+                <li class="list-group-item" id="ingredient3" onclick="deleteIngredient(3)">&#127869; </li>
+                <li class="list-group-item" id="ingredient4" onclick="deleteIngredient(4)">&#127869; </li>
+              </ul>
 
-            <button id="pantrybutton">What can I make?</button>
+            <!-- <button id="pantrybutton">What can I make?</button> -->
+            <button class="mealbuttons btn btn-danger btn-lg" id="pantrybutton">What can I make?</button>
         </div>
 
-        <div class="macrobox" id="suggestionsbox">
+        <!-- <div class="macrobox" id="suggestionsbox">
             <div class="dishbox" id="dishbox1">
                 <div class="dishtitle" id="dish1title">Dish 1</div>
                 <img class="dishimage" id="dish1image" src="" alt="Dish 1" />
@@ -131,9 +177,11 @@
                 <p class="dishmissingprice" id="dish10missingprice">Total price range of missing ingredients: </p>
                 <p class="dishcooktime" id="dish10cooktime">Time to cook: </p>
             </div>
-        </div>
+        </div> -->
 
-        <div id="creators">Creators: An, Carlos, Jorge</div>
+        <!-- <div id="creators">Creators: An, Carlos, Jorge</div> -->
     </div>
 </body>
+<script src="../javascript/food-app.js"></script>
+
 </html>
