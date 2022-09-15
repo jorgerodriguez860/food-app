@@ -28,18 +28,52 @@
 
 <div id="container">        <!-- main container -->
 
-    <div id="main">         <!-- main div to hold content -->
-        <div id="header">   <!-- header -->
-            <h2 id="headerText">Cooking with Recipes</h2>
-        </div>
+  <div id="main">         <!-- main div to hold content -->
+
+    <div class="macrobox" id="mealbox">
+
+      <div id="mealselect">
+        <h2 id="header">Cooking with Recipes</h2>
+        <h5>Please select options below:</h5>
+        <!-- <h3 id="whitetext">Select an option below:</h3> -->
+      </div>
+
+      <div id="mealtype">
+        <button class="mealbuttons btn btn-outline-danger btn-lg" id="breakfastbutton" onclick="mealTypeClick('breakfast')" aria-pressed="true">Breakfast &#127859</button>
+        <button class="mealbuttons btn btn-outline-danger btn-lg" id="lunchbutton" onclick="mealTypeClick('lunch')">Lunch &#127858</button>
+        <button class="mealbuttons btn btn-outline-danger btn-lg" id="dinnerbutton" onclick="mealTypeClick('dinner')">Dinner 	&#127869</button>
+      </div>
+
+      <hr>
+
+      <div id="cuisine">
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick=" mealTypeClick('african')" aria-pressed="true">African</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick=" mealTypeClick('american')">American</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick=" mealTypeClick('cajun')">Cajun</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick=" mealTypeClick('caribbean')" aria-pressed="true">Caribbean</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick=" mealTypeClick('chinese')">Chinese</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick=" mealTypeClick('european')">European</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('french')" aria-pressed="true">French</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('greek')">Greek</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('indian')">Indian</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('japanese')" aria-pressed="true">Japanese</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('korean')">Korean</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('italian')">Italian</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('latin')" aria-pressed="true">Latin American</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('mediterranean')">Mediterranean</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('mexican')">Mexican</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('middle eastern')" aria-pressed="true">Middle Eastern</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('spanish')">Spanish</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('thai')">Thai</button>
+        <button class="mealbuttons btn btn-outline-danger btn-sm" id="" onclick="mealTypeClick('vietnamese')" aria-pressed="true">Vietnamese</button>
+      </div>
+
+      <div id="submit">
+        <button class="mealbuttons btn btn-outline-danger btn-lg" id="submitButton" onclick="()">Cook</button>
+      </div>
     </div>
 
-        <div id="selection">
-            <div id ="recipeInput" class="input-group mb-3">
-                <span class="input-group-text" id="basic-addon1">Enter Recipe Name</span>
-                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-        </div>
+  </div>
       
 
       
