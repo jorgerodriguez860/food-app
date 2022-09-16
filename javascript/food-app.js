@@ -139,7 +139,7 @@ function searchWhatCanBeMade() {
     if(prevString != buildString && buildString!='') {
 
         //api call string
-        buildLinkString = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients='+ buildString + '&number=5&apiKey=62c793b95cc841b1a1d5e64a9cf775b2';
+        buildLinkString = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients='+ buildString + '&number=5&apiKey=0069dff9eb0c4618a3c9733447ec3ebb';
 
         //fetch call
         fetch(buildLinkString)
