@@ -20,7 +20,7 @@ The Cook with Recipes page prompts the user to select one category from each sec
 -Deployment site: Netlify
 
 ## Screenshots of Simply Foods
-<img src="./assets/bg.jpg" height="40" width="60">
+<img src="./assets/ss" height="" width="60">
 
 ## Design Team
 -An Nguyen

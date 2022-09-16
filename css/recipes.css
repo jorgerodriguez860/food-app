@@ -74,7 +74,12 @@ button {
 }
 
 .card {
-    margin: 2%;
+    width: 15rem;
+    margin-top: 5%;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 #suggestionsbox {
@@ -83,6 +88,10 @@ button {
     flex-wrap: wrap;
     margin-top: 1%;
     justify-content: space-evenly;
+}
+
+button:hover {
+    transform: scale(1.2);
 }
 
 

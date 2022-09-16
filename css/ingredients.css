@@ -90,6 +90,10 @@ body {
     margin: 2%;
 }
 
+.card:hover {
+    transform: scale(1.1);
+}
+
 #suggestionsbox {
     display: flex;
     flex-direction: row;
