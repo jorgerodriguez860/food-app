@@ -1,4 +1,6 @@
-
+body {
+    padding-bottom: 40px;
+}
 /* Entire page styling */
 .pagecontainer {
     display: flex;
@@ -85,14 +87,13 @@
 }
 
 .card {
-    margin-top: 2%;
-    margin: 1%;
-    width: 60%;
+    margin: 2%;
 }
 
 #suggestionsbox {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 3%;
+    margin-top: 1%;
+    justify-content: space-evenly;
 }
