@@ -210,15 +210,16 @@ function cook() {
                             // console.log(ingredients)
 
                             newCard = document.createElement('div');
-                            newCard.innerHTML = `<div id="mealcards" class='card' style='width: 18rem;'>
-                                <img class='card-img-top' src='${dishImage}' alt='Card image cap'>
-                                    <div class='card-body'>
-                                    <h5 class='card-title'>${dishName}</h5>
-                                    <p class='card-text'><h6>Ingredients:</h6>${ingredients}</p>
-                                    <p class='card-text'><h6>Diet Label(s):</h6>${diet}</p>
-                                    <p class='card-text'><h6>Calories:</h6>${cal}</p>
-                                </div>
-                            </div>`
+                            newCard.innerHTML = `
+                                                <div id="mealcards" class='card' style='width: 18rem;'>
+                                                <img class='card-img-top' src='${dishImage}' alt='Card image cap'>
+                                                <div class='card-body'>
+                                                <h5 class='card-title'>${dishName}</h5>
+                                                <p class='card-text'><h6>Ingredients:</h6>${ingredients}</p>
+                                                <p class='card-text'><h6>Diet Label(s):</h6>${diet}</p>
+                                                <p class='card-text'><h6>Calories:</h6>${cal}</p>
+                                                </div>
+                                                </div>`
                             
                             // console.log(data[i].missedIngredients[0].name)
                             suggestionsbox.append(newCard)

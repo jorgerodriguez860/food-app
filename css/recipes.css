@@ -25,6 +25,7 @@
     color: white;
     padding: 15px;
     border-radius: 7px;
+    margin-top: 2%;
     
 }
 
@@ -72,13 +73,14 @@ button {
 }
 
 .card {
-    height: 40px;
-    
+    margin-top: 2%;
+    margin: 1%;
+    width: 60%;
 }
 
 #suggestionsbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 3%;
 }
-
