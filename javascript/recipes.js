@@ -199,7 +199,7 @@ function cook() {
                             newCard = document.createElement('div');        
                             // setting innerHTML
                             newCard.innerHTML = `                                                   
-                                                <div id="mealcards" class='card' style='width: 18rem;'>
+                                                <div id="mealcards" class='card''>
                                                 <img class='card-img-top' src='${dishImage}' alt='Card image cap'>
                                                 <div class='card-body'>
                                                 <h5 class='card-title'>${dishName}</h5>
