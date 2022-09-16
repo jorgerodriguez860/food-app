@@ -189,3 +189,9 @@ function resetSuggestions() {
 }
 
 
+fetch('https://api.spoonacular.com/food/menuItems/search?query=mexican&apiKey=0069dff9eb0c4618a3c9733447ec3ebb')
+.then(response => {return response.json()})
+        .then(data => {
+            console.log(data)
+
+        })

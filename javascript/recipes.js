@@ -13,6 +13,8 @@ let dishImage = ''
 let ingredients = ''
 let mealPressed = ''
 let suggestionsbox = document.getElementById("suggestionsbox");
+let cuisineLinkString = '';
+
 
 function cuisineTypeClick(typeCuisine) {        // this function is for the cuisine selection section of the page
     // cuisine = typeCuisine;
@@ -34,7 +36,9 @@ function cuisineTypeClick(typeCuisine) {        // this function is for the cuis
     mexican = document.getElementById('mexican');
     middleeastern = document.getElementById('middleeastern');
 
-    newCuisineString = typeCuisine.split(" ").join("")      
+    newCuisineString = typeCuisine.split(' ').join('')
+    cuisineLinkString = typeCuisine.split(' ').join('%20');
+    console.log(newCuisineString)  
 
     // console.log(typeCuisine)
     cuisinePressed = document.getElementById(newCuisineString);
@@ -167,7 +171,7 @@ function cook() {
 
     // requires user to have both buttons active and inputted text to text box
     if(meal!='' && cuisine!='' && query!= null) {
-        let callLink = (`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=6192121f&app_key=c91c5aec01ee24103ab88d0b7c1ce636&cuisineType=${cuisine}&mealType=${meal}&random=true`)
+        let callLink = (`https://api.edamam.com/api/recipes/v2?type=public&q=${query}&app_id=6192121f&app_key=c91c5aec01ee24103ab88d0b7c1ce636&cuisineType=${cuisineLinkString}&mealType=${meal}&random=true`)
         fetch(callLink)
         .then(response => {return response.json()})
         .then(foodData => {
