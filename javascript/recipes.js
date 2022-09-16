@@ -29,7 +29,7 @@ function cuisineTypeClick(typeCuisine) {        // this function is for the cuis
     japanese = document.getElementById('japanese');
     southeastasian = document.getElementById('southeastasian');
     italian = document.getElementById('italian');
-    latin = document.getElementById('latin');
+    southamerican = document.getElementById('southamerican');
     mediterranean = document.getElementById('mediterranean');
     mexican = document.getElementById('mexican');
     middleeastern = document.getElementById('middleeastern');
