@@ -120,7 +120,7 @@ $( document.getElementById('ingredient4')).click(function() {
 
 //onclick function to call the api to find recipes and add the bootstrap cards for those recipes
 function searchWhatCanBeMade() {
-    resetSuggestions(); //reset suggestion cards
+    
 
     buildString = '';
 
@@ -134,6 +134,7 @@ function searchWhatCanBeMade() {
 
     buildString = buildString.slice(0,-2)       //slice last 2 ",+"
 
+    resetSuggestions(); //reset suggestion cards
     //make sure valid string
     if(prevString != buildString && buildString!='') {
 
@@ -181,6 +182,7 @@ function resetSuggestions() {
     console.log('prevString: ' + prevString)
     console.log('buildString: ' +buildString)
     if(prevString != buildString) {
+        console.log('entered')
         suggestionsbox.innerHTML = '';
     }
     

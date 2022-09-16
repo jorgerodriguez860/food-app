@@ -1,8 +1,6 @@
-// all functions for recipes page are written here
 
+let cuisine = "";
 
-// setting variables globally to access in functions
-let cuisine = "";    
 let meal = "";
 let query = "";
 let dishName = '';
@@ -174,9 +172,10 @@ function cook() {
         .then(response => {return response.json()})
         .then(foodData => {
 
-            let results = foodData.hits                 // setting alias to the meals array from response
+            console.log(foodData)
+            let results = foodData.hits
+            console.log(results)
 
-            // console.log(results)                     // test log to retrieve information
 
             // loops through the meal until the 5th meal
             for (let i =0; i < 5; i++) {
@@ -209,11 +208,24 @@ function cook() {
                                                 <p class='card-text'><h6>Calories:</h6>${cal}</p>
                                                 </div>
                                                 </div>`
-                            // appending new card element to HTML suggestionsbox
-                            suggestionsbox.append(newCard)     
-                        }   
-    })
-}}
+
+                            
+                            // console.log(data[i].missedIngredients[0].name)
+                            suggestionsbox.append(newCard)
+                            
+                        }
+            
+        })
+
+    }
+    else {
+        $( document.getElementById('submitButton') ).effect( "shake", "swing");      //if invalid input shake the enter button   
+        $( document.getElementById('optionstext') ).effect( "shake", "swing");      //if invalid input shake the enter button   
+
+    }
+
+}
+
 
 function resetSuggestions() {       // resets and removes meal cards to show new results
     suggestionsbox.innerHTML = ''
