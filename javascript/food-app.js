@@ -1,6 +1,5 @@
 // List of 1,000 most frequently used ingredients from Spoonacular API
-
-ingredientsDict = {'eggs': 0, 
+let ingredientsDict = {'eggs': 0, 
 '5 spice powder': 0,'acorn squash': 0,'adobo sauce': 0,'agave nectar': 0,'ahi tuna': 0,'alfredo pasta sauce': 0,'almond extract': 0,'almond flour': 0,'almond milk': 0,'almonds': 0,'amaretto': 0,'ancho chiles': 0,'anchovies': 0,'andouille sausage': 0,'angel food cake mix': 0,'angel hair pasta': 0,'angostura bitters': 0,'apple': 0,'apple butter spread': 0,'apple cider': 0,'apple juice': 0,'apple pie spice': 0,'apricot preserves': 0,'apricots': 0,'arborio rice': 0,'arrowroot powder': 0,'artichoke heart quarters': 0,'artichokes': 0,'arugula': 0,'asafoetida': 0,'asafoetida powder': 0,'asiago cheese': 0,'asian pear': 0,'asparagus spears': 0,'avocado': 0,'avocado oil': 0,'baby bell peppers': 0,'baby bok choy': 0,'baby carrots': 0,'baby corn': 0,'baby spinach leaves': 0,'baby-back ribs': 0,'baby-back ribs': 0,'bacon': 0,'bacon fat': 0,'baguette': 0,'baking bar': 0,'baking powder': 0,'baking soda': 0,'balsamic glaze': 0,'balsamic vinegar': 0,'bamboo shoots': 0,'banana': 0,'basmati rice': 0,'bay leaves': 0,'bbq sauce': 0,'beans': 0,'beef': 0,'beef brisket': 0,'beef broth': 0,'beef chuck roast': 0,'beef stock': 0,'beef tenderloin': 0,'beer': 0,'beer': 0,'beets': 0,'bell pepper': 0,'berries': 0,'biscuit mix': 0,'biscuits': 0,'bittersweet chocolate': 0,'black bean sauce': 0,'black beans': 0,'black olives': 0,'black pepper': 0,'black sesame seeds': 0,'blackberries': 0,'blanched almonds': 0,'blood orange': 0,'blue cheese': 0,'blueberries': 0,'bok choy': 0,'boneless skinless chicken breast': 0,'bourbon': 0,'brandy': 0,'bread': 0,'bread flour': 0,'breakfast links': 0,'brie': 0,'broccoli': 0,'broccoli florets': 0,'brown rice': 0,'brown rice flour': 0,'brown sugar': 0,'brownie mix': 0,'brussel sprouts': 0,'bulgur': 0,'butter': 0,'butterhead lettuce': 0,'buttermilk': 0,'butternut squash': 0,'butterscotch chips': 0,'cabbage': 0,'caesar dressing': 0,'cajun seasoning': 0,'cake flour': 0,'candy canes': 0,'candy coating': 0,'candy melts': 0,'canned black beans': 0,'canned diced tomatoes': 0,'canned garbanzo beans': 0,'canned green chiles': 0,'canned kidney beans': 0,'canned mushrooms': 0,'canned pinto beans': 0,'canned red kidney beans': 0,'canned tomatoes': 0,'canned tuna': 0,'canned white beans': 0,'canned white cannellini beans': 0,'cannellini beans': 0,'cantaloupe': 0,'capers': 0,'caramel sauce': 0,
 'caramels': 0,'caraway seed': 0,'cardamom': 0,'cardamom pods': 0,'carp': 0,'carrots': 0,'cat fish filets': 0,'cauliflower': 0,'cauliflower florets': 0,'cauliflower rice': 0,'celery': 0,'celery ribs': 0,'celery root': 0,'celery salt': 0,'celery seed': 0,'cereal': 0,'champagne': 0,'chana dal': 0,'cheddar': 0,'cheese': 0,'cheese curds': 0,'cheese dip': 0,'cheese soup': 0,'cheese tortellini': 0,'cherry': 0,'cherry pie filling': 0,'cherry tomatoes': 0,'chestnuts': 0,'chia seeds': 0,'chicken base': 0,'chicken bouillon': 0,'chicken bouillon granules': 0,'chicken breasts': 0,'chicken broth': 0,'chicken drumsticks': 0,'chicken legs': 0,'chicken pieces': 0,'chicken sausage': 0,'chicken stock': 0,'chicken tenders': 0,'chicken thighs': 0,'chicken wings': 0,'chickpea': 0,'chile garlic sauce': 0,'chili paste': 0,'chili peppers': 0,'chili powder': 0,'chili sauce': 0,'chipotle chiles in adobo': 0,'chipotle chilies': 0,'chipotle peppers in adobo': 0,'chive & onion cream cheese spread': 0,'chocolate': 0,'chocolate chip cookies': 0,'chocolate chunks': 0,'chocolate ice cream': 0,'chocolate milk': 0,'chocolate sandwich cookies': 0,'chocolate syrup': 0,'chocolate wafer cookies': 0,'chorizo sausage': 0,'cider vinegar': 0,'cilantro': 0,'cinnamon roll': 0,'cinnamon stick': 0,'cinnamon sugar': 0,'cinnamon swirl bread': 0,'clam juice': 0,'clams': 0,'clarified butter': 0,'clove': 0,'coarse salt': 0,'coarsely ground pepper': 0,'cocoa nibs': 0,'cocoa powder': 0,'coconut': 0,'coconut aminos': 0,'coconut butter': 0,'coconut cream': 0,'coconut extract': 0,'coconut flour': 0,'coconut milk': 0,'coconut oil': 0,'coconut water': 0,'cod': 0,'coffee': 0,'cognac': 0,'cola': 0,'colby jack': 0,'collard greens': 0,'condensed cream of celery soup': 0,'condensed cream of mushroom soup': 0,
 "confectioner's swerve": 0,'cooked bacon': 0,'cooked brown rice': 0,'cooked chicken breast': 0,'cooked ham': 0,'cooked long grain rice': 0,'cooked pasta': 0,'cooked polenta': 0,'cooked quinoa': 0,'cooked wild rice': 0,'cookies': 0,'coriander': 0,'corn': 0,'corn bread mix': 0,'corn chips': 0,'corn flakes cereal': 0,'corn flour': 0,'corn kernels': 0,'corn oil': 0,'corn tortillas': 0,'cornbread': 0,'corned beef': 0,'cornish hens': 0,'cornmeal': 0,'cornstarch': 0,
@@ -17,96 +16,55 @@ ingredientsDict = {'eggs': 0,
 'whipped cream': 0,'whipped topping': 0,'whipping cream': 0,'whiskey': 0,'white balsamic vinegar': 0,'white bread': 0,'white cake mix': 0,'white cheddar': 0,'white chocolate': 0,'white chocolate chips': 0,'white onion': 0,'white pepper': 0,'white whole wheat flour': 0,'white wine': 0,'white wine vinegar': 0,'whole allspice berries': 0,'whole chicken': 0,'whole coriander seeds': 0,'whole cranberry sauce': 0,'whole kernel corn': 0,'whole star anise': 0,'whole wheat bread': 0,'whole wheat flour': 0,'whole wheat tortillas': 0,'whole-grain mustard': 0,'wine': 0,'wine vinegar': 0,'winter squash': 0,'won ton wraps': 0,'worcestershire sauce': 0,'wraps': 0,'xanthan gum': 0,'yeast': 0,'yellow bell pepper': 0,'yellow cake mix': 0,'yellow onion': 0,'yogurt': 0,'yukon gold potato': 0
 };
 
-chosenMeal = 'None';
-currentIngredient = 0;
+//global variables
+let chosenMeal = 'None';
+let currentIngredient = 0;
 let suggestionsbox = document.getElementById('suggestionsbox');
-// ingredientsDict = {'eggs': 0, 
-//     'chicken': 0, 
-//     'tomato': 0,
-//     'bread': 0,
-//     'flour': 0,
-//     'bell pepper': 0
-//     };
+let prevString = "None"
+let buildString = '';
 
-// currentPantry = [];
-
-
-// function mealTypeClick(meal) {
-//     // get id for each button
-//     // breakfastbutton = document.getElementById('breakfastbutton');
-//     // lunchbutton = document.getElementById('lunchbutton');
-//     // dinnerbutton = document.getElementById('dinnerbutton');
-
-//     //get id for button pressed
-//     mealPressed = document.getElementById(meal + "button");
-//     console.log(chosenMeal);
-
-//     //if no meal has been selected
-//     if(chosenMeal == 'None') {
-//         mealPressed.style.backgroundColor = "#dc3444";
-//         mealPressed.style.color = "white";
-//         chosenMeal = meal;
-//     }
-//     //if button is already selected then reset
-//     else if(chosenMeal == meal) {
-//         mealPressed.style.backgroundColor = "white";
-//         mealPressed.style.color = "#dc3444";
-//         chosenMeal = 'None';
-//     }
-//     //if a meal is selected but user wants to change. Reset button colors and appear pressed to new pressed button
-//     else if(chosenMeal != 'None') {
-//         //reset breakfast button
-//         breakfastbutton.style.backgroundColor = "white";
-//         breakfastbutton.style.color = "#dc3444";
-
-//         //reset lunch button
-//         lunchbutton.style.backgroundColor = "white";
-//         lunchbutton.style.color = "#dc3444";
-
-//         //reset dinner button
-//         dinnerbutton.style.backgroundColor = "white";
-//         dinnerbutton.style.color = "#dc3444";
-
-//         //change mealpressed to appear pressed
-//         mealPressed.style.backgroundColor = "#dc3444";
-//         mealPressed.style.color = "white";
-//         chosenMeal = meal;
-//     }
-    
-
-
-
-// }
-
+//onclick function that adds ingredient to current pantry list
 function ingredientEnterClick() {
-    const ingredientsinput = document.getElementById('ingredientsinput').value;
-    console.log(ingredientsinput);
+    
+    const ingredientsinput = document.getElementById('ingredientsinput').value;     //get value that was entered by user
 
-    //check if in ingredientsDict, not yet selected and a mealtype has been selected
+    //check if an option inside of ingredientsDict, not yet selected and no more than 5 ingredients are on the list
     if(currentIngredient < 5 && ingredientsDict[ingredientsinput]!=null && ingredientsDict[ingredientsinput] == 0) {
-        console.log('found');
+        //get where the ingredient is to be placed
         ingredientListLocation = document.getElementById('ingredient' + currentIngredient);
+        //add ingredient with plate emoji before
         ingredientListLocation.innerHTML = "&#127869; " + ingredientsinput
         
         ingredientsDict[ingredientsinput] += 1;
         currentIngredient++;
+
+        //shake effect letting user know they can press "What can I make" button
+        $( document.getElementById('pantrybutton') ).effect( "shake", "swing", 2000);
+        document.getElementById('ingredientsinput').value = '';
     }
+    else{
+        $( document.getElementById('enterbutton') ).effect( "shake", "swing");      //if invalid input or empty input shake the enter button
+    }
+
 }
 
+//function to delete any ingredient pressed on the current pantry list
 function deleteIngredient(index) {
-    ingredientList0 = document.getElementById("ingredient0");
-    ingredientList1 = document.getElementById("ingredient1");
-    ingredientList2 = document.getElementById("ingredient2");
-    ingredientList3 = document.getElementById("ingredient3");
-    ingredientList4 = document.getElementById("ingredient4");
+    //get element by id of each list element
+    let ingredientList0 = document.getElementById("ingredient0");
+    let ingredientList1 = document.getElementById("ingredient1");
+    let ingredientList2 = document.getElementById("ingredient2");
+    let ingredientList3 = document.getElementById("ingredient3");
+    let ingredientList4 = document.getElementById("ingredient4");
     
-    clickedIndex = document.getElementById("ingredient" + index).innerText
+    //see which element was clicked
+    let clickedIndex = document.getElementById("ingredient" + index).innerText
+    
+    //find text and reset in dict
     clickedText = clickedIndex.slice(3)
     ingredientsDict[clickedText] = 0
-    console.log(ingredientsDict)
 
-    
-
+    //move each remaining element up a spot on the list
     for(i = index;i<currentIngredient;i++) {
         if(i==0) {
            ingredientList0.innerText = ingredientList1.innerText;
@@ -122,76 +80,110 @@ function deleteIngredient(index) {
         }
         else if(i==4) {
             ingredientList4.innerHTML = "&#127869; ";
-            console.log(ingredientList4.innerHTML)
         }
-        
-
     }
-    currentIngredient --;
+    
+    //get which index to add next by subtracting one
+    if(currentIngredient > 0 ) {
+            currentIngredient --;
+        }
 
 }
 
+//adding effects to list
+// add highlight effect to ingredient0 when a list element is clicked
+$( document.getElementById('ingredient0')).click(function() {
+    $( document.getElementById('ingredient0')).effect("highlight", {color: '#dc3444'});
+  });
+
+// add highlight effect to ingredient1 when a list element is clicked
+$( document.getElementById('ingredient1')).click(function() {
+    $( document.getElementById('ingredient1')).effect("highlight", {color: '#dc3444'});
+  });
+
+// add highlight effect to ingredient2 when a list element is clicked
+$( document.getElementById('ingredient2')).click(function() {
+    $( document.getElementById('ingredient2')).effect("highlight", {color: '#dc3444'});
+  });
+
+// add highlight effect to ingredient3 when a list element is clicked
+$( document.getElementById('ingredient3')).click(function() {
+    $( document.getElementById('ingredient3')).effect("highlight", {color: '#dc3444'});
+  });
+
+// add highlight effect to ingredient4 when a list element is clicked
+$( document.getElementById('ingredient4')).click(function() {
+    $( document.getElementById('ingredient4')).effect("highlight", {color: '#dc3444'});
+  });
 
 
+
+//onclick function to call the api to find recipes and add the bootstrap cards for those recipes
 function searchWhatCanBeMade() {
-    resetPantry()
-    buildString = ''
-    // for(i=0;i<=currentIngredient;i++) {
-    //     buildString = 
-    // }
+    resetSuggestions(); //reset suggestion cards
 
+    buildString = '';
+
+    //for each statement to statement to find any keys with a value of 1 meaning they were added to the pantry list
+    //then build a string out of those keys
     Object.entries(ingredientsDict).forEach(function([key, value]) {
-        console.log(`${key} ${value}`);
         if(value == 1) {
             buildString += key + ",+"
         }
      });
 
-    
-    buildString = buildString.slice(0,-2)
-     console.log(buildString)
+    buildString = buildString.slice(0,-2)       //slice last 2 ",+"
 
-    buildLinkString = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients=' + buildString + '&number=5&apiKey=62c793b95cc841b1a1d5e64a9cf775b2';
-    console.log(buildLinkString)
-    fetch(buildLinkString)
-    .then(response => {return response.json()})
-    .then(data => {
-        console.log('data')
-        console.log(data)
+    //make sure valid string
+    if(prevString != buildString && buildString!='') {
 
-        
-        // newCard.setAttribute('id', 'cards');
+        //api call string
+        buildLinkString = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients='+ buildString + '&number=5&apiKey=62c793b95cc841b1a1d5e64a9cf775b2';
 
-        for(i = 0; i< 5; i++) {
-            newCard = document.createElement('div');
-            missingIngredients = " "
-            for(j = 0; j<data[i].missedIngredients.length;j++) {
-                missingIngredients = missingIngredients + ' ' + data[i].missedIngredients[j].originalName + ', '
+        //fetch call
+        fetch(buildLinkString)
+        .then(response => {return response.json()})
+        .then(data => {
+            //go through 5 recipes to find information needed to be added to the card
+            for(i = 0; i< 5; i++) {
+                newCard = document.createElement('div');
+                let missingIngredients = " "    //string for missing ingredients
+
+                //go through the ingredients missing to add to one single string
+                for(j = 0; j<data[i].missedIngredients.length;j++) {
+                    missingIngredients = missingIngredients + ' ' + data[i].missedIngredients[j].originalName + ', '
+                }
+                
+                //make a new card with the relevant information
+                newCard.innerHTML = `<div class='card' style='width: 18rem;'>
+                    <img class='card-img-top' src='${data[i].image}' alt='Card image cap'>
+                    <div class='card-body'>
+                        <h5 class='card-title'>${data[i].title}</h5>
+                        <p class='card-text'><h6>Missing Ingredients:</h6> ${missingIngredients}</p>
+                        <a href='#' class='btn btn-primary'>${data[i].likes} &#x1F44D;</a>
+                    </div>
+                </div>`
+                
+                suggestionsbox.append(newCard)      //make the cards appear
             }
-            
+            prevString = buildString;
+        })
+    }
+    else{
+        $( document.getElementById('pantrybutton') ).effect( "shake");
+    }
 
-
-            newCard.innerHTML = `<div class='card' style='width: 18rem;'>
-                <img class='card-img-top' src='${data[i].image}' alt='Card image cap'>
-                <div class='card-body'>
-                    <h5 class='card-title'>${data[i].title}</h5>
-                    <p class='card-text'><h6>Missing Ingredients:</h6> ${missingIngredients}</p>
-                    <a href='#' class='btn btn-primary'>${data[i].likes} &#x1F44D;</a>
-                </div>
-            </div>`
-            
-            // console.log(data[i].missedIngredients[0].name)
-            suggestionsbox.append(newCard)
-        }
-
-        console.log(missingIngredients)
     
-
-    })
 }
 
-function resetPantry() {
-    suggestionsbox.innerHTML = ''
+//function to reset card suggestions
+function resetSuggestions() {
+    console.log('prevString: ' + prevString)
+    console.log('buildString: ' +buildString)
+    if(prevString != buildString) {
+        suggestionsbox.innerHTML = '';
+    }
+    
 }
 
 
