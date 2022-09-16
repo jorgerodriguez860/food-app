@@ -1,5 +1,3 @@
-
-
 let cuisine = "";
 let meal = "";
 let query = "";
@@ -186,7 +184,7 @@ function cook() {
         fetch(callLink)
         .then(response => {return response.json()})
         .then(foodData => {
-
+            console.log(foodData)
             let results = foodData.hits
             console.log(results)
 
@@ -226,9 +224,16 @@ function cook() {
                             
                         }
             
-    })
+        })
 
-}}
+    }
+    else {
+        $( document.getElementById('submitButton') ).effect( "shake", "swing");      //if invalid input shake the enter button   
+        $( document.getElementById('optionstext') ).effect( "shake", "swing");      //if invalid input shake the enter button   
+
+    }
+
+}
 
 function resetSuggestions() {
     suggestionsbox.innerHTML = ''
