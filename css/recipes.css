@@ -95,3 +95,43 @@ button:hover {
 }
 
 
+
+
+
+/* #modalcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal {
+    background-color: white;
+    color: #dc3444;
+    width: 500px;
+    max-width: 100%;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+#modalcontainer.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#close, #moreinfo {
+    background-color: #dc3444;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    padding: 4px 12px;
+    font-size: 14px;
+} */
+
+
