@@ -210,9 +210,9 @@ function cook() {
                                                 <p class='card-text'><h6>Ingredients:</h6>${ingredients}</p>
                                                 <p class='card-text'><h6>Diet Label(s):</h6>${diet}</p>
                                                 <p class='card-text'><h6>Calories:</h6>${cal}</p>
-                                                <button id="moreinfo">Show more</button>
                                                 </div>
                                                 </div>`
+                                                // <button id="moreinfo">Show more</button>
 
                             // console.log(data[i].missedIngredients[0].name)
                             suggestionsbox.append(newCard)
