@@ -32,6 +32,7 @@ function ingredientEnterClick() {
     if(currentIngredient < 5 && ingredientsDict[ingredientsinput]!=null && ingredientsDict[ingredientsinput] == 0) {
         //get where the ingredient is to be placed
         ingredientListLocation = document.getElementById('ingredient' + currentIngredient);
+        console.log(currentIngredient)
         //add ingredient with plate emoji before
         ingredientListLocation.innerHTML = "&#127869; " + ingredientsinput
         
@@ -88,6 +89,7 @@ function deleteIngredient(index) {
             currentIngredient --;
         }
 
+
 }
 
 //adding effects to list
@@ -136,10 +138,10 @@ function searchWhatCanBeMade() {
 
     resetSuggestions(); //reset suggestion cards
     //make sure valid string
-    if(prevString != buildString && buildString!='') {
+    if(prevString != buildString && buildString!='' && currentIngredient>=0) {
 
         //api call string
-        buildLinkString = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients='+ buildString + '&number=5&apiKey=0069dff9eb0c4618a3c9733447ec3ebb';
+        buildLinkString = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients='+ buildString + '&number=5&apiKey=62c793b95cc841b1a1d5e64a9cf775b2';
 
         //fetch call
         fetch(buildLinkString)
@@ -189,9 +191,9 @@ function resetSuggestions() {
 }
 
 
-fetch('https://api.spoonacular.com/food/menuItems/search?query=mexican&apiKey=0069dff9eb0c4618a3c9733447ec3ebb')
-.then(response => {return response.json()})
-        .then(data => {
-            console.log(data)
+// fetch('https://api.spoonacular.com/food/menuItems/search?query=mexican&apiKey=0069dff9eb0c4618a3c9733447ec3ebb')
+// .then(response => {return response.json()})
+//         .then(data => {
+//             console.log(data)
 
-        })
+//         })
