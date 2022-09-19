@@ -28,8 +28,8 @@ The Cook with Recipes page prompts the user to select one category from each sec
 <img src="./assets/ss6.png" height="70" width="100">
 <img src="./assets/ss7.png" height="70" width="100">
 
-## Design Team
+## Software Development Team
 - An Nguyen
 - Carlos Hernandez
-- <img src="./assets/jorge.jpeg" height="125" width="125" border-radius="50%">
+- <img src="./assets/jorge.jpeg" height="125" width="125">
 - Jorge Rodriguez
