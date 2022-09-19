@@ -1,6 +1,6 @@
 # Simply Foods
 
-## Web App Link
+## Website Link
 Visit [Simply Foods](https://astounding-pasca-d48b68.netlify.app/index.html)!
 
 ## About
@@ -13,11 +13,11 @@ The Cook with Ingredients page will allow the user to enter up to 5 ingredients 
 The Cook with Recipes page prompts the user to select one category from each section, with an optional input to search for specific ingredients. The user must have both meal type and cuisine type entered for suggestions to show.
 
 ## Technologies Used
--Programming languages: HTML, CSS, JavaScript
--JavaScript library: jQuery UI
--CSS styling: Bootstrap
--APIs: Spoonacular, Edamame
--Deployment site: Netlify
+- Programming languages: HTML, CSS, JavaScript
+- JavaScript library: jQuery UI
+- CSS styling: Bootstrap
+- APIs: Spoonacular, Edamame
+- Deployment site: Netlify
 
 ## Screenshots of Simply Foods
 <img src="./assets/ss1.png" height="70" width="100">
@@ -29,7 +29,7 @@ The Cook with Recipes page prompts the user to select one category from each sec
 <img src="./assets/ss7.png" height="70" width="100">
 
 ## Design Team
--An Nguyen
--Carlos Hernandez
-<img src="./assets/jorge.jpeg" height="70" width="100"> 
--Jorge Rodriguez
+- An Nguyen
+- Carlos Hernandez
+- <img src="./assets/jorge.jpeg" height="125" width="125" border-radius="50%">
+- Jorge Rodriguez
