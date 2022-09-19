@@ -31,5 +31,5 @@ The Cook with Recipes page prompts the user to select one category from each sec
 ## Design Team
 -An Nguyen
 -Carlos Hernandez
-<img src="./assets/jorge.jpeg">
+<img src="./assets/jorge.jpeg" height="70" width="100"> 
 -Jorge Rodriguez
