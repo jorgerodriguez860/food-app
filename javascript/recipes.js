@@ -96,8 +96,8 @@ function cuisineTypeClick(typeCuisine) {        // this function is for the cuis
         italian.style.color = "#dc3444";
 
         //reset dinner button
-        latin.style.backgroundColor = "white";
-        latin.style.color = "#dc3444";
+        southamerican.style.backgroundColor = "white";
+        southamerican.style.color = "#dc3444";
 
         //reset dinner button
         mediterranean.style.backgroundColor = "white";
