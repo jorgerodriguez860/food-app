@@ -55,59 +55,59 @@ function cuisineTypeClick(typeCuisine) {        // this function is for the cuis
         cuisine = '';
         console.log(cuisine)
     } else if(cuisine != '') {                                  // button background resets to white if empty/not active
-        //reset breakfast button
+        //reset asian button
         asian.style.backgroundColor = "white";
         asian.style.color = "#dc3444";
 
-        //reset lunch button
+        //reset american button
         american.style.backgroundColor = "white";
         american.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset central europe button
         centraleurope.style.backgroundColor = "white";
         centraleurope.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset caribbean button
         caribbean.style.backgroundColor = "white";
         caribbean.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset chinese button
         chinese.style.backgroundColor = "white";
         chinese.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset french button
         french.style.backgroundColor = "white";
         french.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset indian button
         indian.style.backgroundColor = "white";
         indian.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset japanese button
         japanese.style.backgroundColor = "white";
         japanese.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset south east asian button
         southeastasian.style.backgroundColor = "white";
         southeastasian.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset italian button
         italian.style.backgroundColor = "white";
         italian.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset south american button
         southamerican.style.backgroundColor = "white";
         southamerican.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset mediterranean button
         mediterranean.style.backgroundColor = "white";
         mediterranean.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset mexican button
         mexican.style.backgroundColor = "white";
         mexican.style.color = "#dc3444";
 
-        //reset dinner button
+        //reset middle eastern button
         middleeastern.style.backgroundColor = "white";
         middleeastern.style.color = "#dc3444";
 
