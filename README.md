@@ -1,7 +1,7 @@
 # Simply Foods
 
 ## Website Link
-Visit [Simply Foods](https://astounding-pasca-d48b68.netlify.app/index.html)!
+Visit [Simply Foods](https://simplyfoods.netlify.app/)!
 
 ## About
 Simply Foods is a handy little web app that helps you decide what to cook. Get recommendations one of two ways: either provide ingredients you want to use or search for recipes of the cuisine and meal type that you want. Either way, you'll get a selection of delicious meals for you to chef it up!
